@@ -1,0 +1,3 @@
+- [wzhe06/Ad-papers](https://github.com/wzhe06/Ad-papers)
+- [wnzhang/rtb-papers](https://github.com/wnzhang/rtb-papers)
+- [Doragd/Algorithm-Practice-in-Industry](https://github.com/Doragd/Algorithm-Practice-in-Industry)
