@@ -16,10 +16,29 @@ cat_list = [
     "cs.SY"
 ]
 
+tag_list = [
+    "ctr prediction",
+    "cvr prediction",
+    "budget pacing",
+    "budget control",
+    "bidding strategy",
+    "bid landscape",
+    "frequency capping",
+    "retargting",
+    "fraud detection",
+    "DMP",
+    "conversion attribution",
+    "uncertainty calibration",
+    "GNN",
+    "generative retrieval",
+    "generative model",
+    "AIGC",
+]
+
 prompt1 = "请把这段英文翻译成中文：%s"
 
-prompt2 = """你是一个文本打标专家，即给定一段文本，可以根据内容，打上相关性较高的标签。其中输出结果需要满足以下条件：
-（1）标签范围为ctr prediction，cvr prediction，budget pacing，budget control，bidding strategy，bid landscape，frequency capping，retargting，fraud detection，DMP，conversion attribution，uncertainty calibration，GNN，generative retrieval
+prompt2 = f"""你是一个文本打标专家，即给定一段文本，可以根据内容，打上相关性较高的标签。其中输出结果需要满足以下条件：
+（1）标签范围为${"，".join(tag_list)}
 （2）输出格式为python的list格式，其中list的每个元素是上述标签，比如["bidding strategy"]，或者["budget pacing", "cvr prediction"]
 （3）输出个数可以是1个或者多个，如果没有相关的标签，可以输出0个，即[]
 下面这段英文摘自arxiv相关论文的总结，请对其进行打标：%s
