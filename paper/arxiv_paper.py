@@ -59,7 +59,7 @@ def get_arxiv(start_date, end_date):
         {
             "entry_id": result.entry_id,
             "title": result.title,
-            "summary": result.summary.replace("\n", "")
+            "summary": result.summary.replace("\n", " ")
         }
         for result in results
     )
@@ -94,7 +94,7 @@ def get_total(url, api_key, start_date, end_date):
     results = get_arxiv(start_date, end_date)
     for result in results:
         summary_cn = get_response(url, api_key, prompt1 % result["summary"])
-        summary_cn = summary_cn.replace("\n", "") if summary_cn is not None else summary_cn
+        summary_cn = summary_cn.replace("\n", " ") if summary_cn is not None else summary_cn
         tags = get_response(url, api_key, prompt2 % result["summary"])
         yield {
             "entry_id": result["entry_id"],
