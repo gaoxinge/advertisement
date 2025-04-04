@@ -28,11 +28,11 @@ tag_list = [
     "fraud detection",
     "DMP",
     "conversion attribution",
-    "delayed feedback",
     "calibration",
+    "delayed feedback",
     "GNN",
-    "generative retrieval",
     "generative model",
+    "generative retrieval",
     "AIGC",
 ]
 
