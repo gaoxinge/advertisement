@@ -17,23 +17,23 @@ cat_list = [
 ]
 
 tag_list = [
-    "ctr prediction",
-    "cvr prediction",
     "budget pacing",
     "budget control",
     "bidding strategy",
     "bid landscape",
+    "ctr prediction",
+    "cvr prediction",
+    "conversion attribution",
+    "calibration",
+    "delayed feedback",
+    "generative model",
+    "generative retrieval",
+    "AIGC",
     "frequency capping",
     "retargting",
     "fraud detection",
     "DMP",
-    "conversion attribution",
-    "calibration",
-    "delayed feedback",
     "GNN",
-    "generative model",
-    "generative retrieval",
-    "AIGC",
 ]
 
 prompt1 = "请把这段英文翻译成中文：%s"
